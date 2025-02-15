@@ -1,8 +1,9 @@
 package com.example.yourtodo.data
 
-import androidx.compose.ui.graphics.vector.ImageVector
+import java.util.Date
 
-data class Item(
+data class TodoItem(
+    val id: Long,
     val text: String,
-    val icon: ImageVector
+    val date: Date
 )

@@ -18,14 +18,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             YourToDoTheme {
-                MyApp()
+                MainScreenApp()
             }
         }
     }
 }
 
 @Composable
-fun MyApp() {
+fun MainScreenApp() {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = "splash") {
